@@ -87,7 +87,7 @@ const App = () => {
         wavePortalContract.off("NewWave", onNewWave);
       }
     };
-  }, []);
+  }, );
 
   /* window.ethereumにアクセスできることを確認する関数を実装 */
   const checkIfWalletIsConnected = async () => {
@@ -185,7 +185,7 @@ const App = () => {
   /* WEBページがロードされたときにcheckIfWalletIsConnected()を実行 */
   useEffect(() => {
     checkIfWalletIsConnected();
-  }, []);
+  }, );
 
   return (
     <div className="mainContainer">
