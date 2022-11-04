@@ -232,7 +232,8 @@ const App = () => {
             value={messageValue}
             onChange={(e) => setMessageValue(e.target.value)}
           />
-        )}
+          )
+        }
         {/* 履歴を表示する */}
         {currentAccount &&
           allWaves
